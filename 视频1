@@ -1,0 +1,1 @@
+cd /storage/emulated/0/Download && ffmpeg -loop 1 -i cat.jpg -i bgm.mp3 -t 10 -vf "scale=1280:720,fps=24" -c:v libx264 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest final.mp4
